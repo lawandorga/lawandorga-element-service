@@ -9,15 +9,6 @@ on:
         required: true
       scw_project_id:
         required: true
-      env_vars:
-        required: true
-    inputs:
-      image_version:
-        required: true
-        type: string
-      environment:
-        required: true
-        type: string
 
 jobs:
   deploy:
