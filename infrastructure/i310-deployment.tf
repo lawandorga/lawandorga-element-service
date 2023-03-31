@@ -44,6 +44,16 @@ resource "kubernetes_deployment_v1" "deployment" {
           port {
             container_port = 80
           }
+
+          readiness_probe {
+            http_get {
+              port = 80
+              http_header {
+                name  = "Host"
+                value = "chat.law-orga.de"
+              }
+            }
+          }
         }
       }
     }
