@@ -9,6 +9,10 @@ on:
         required: true
       scw_project_id:
         required: true
+    inputs:
+      environment:
+        required: true
+        type: string
 
 jobs:
   deploy:

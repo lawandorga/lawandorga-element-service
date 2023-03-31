@@ -8,6 +8,8 @@ jobs:
   deploy:
     name: Deploy
     uses: ./.github/workflows/deployment-stage--terraform-apply.yml
+    with:
+      environment: PRODUCTION
     secrets:
       scw_access_key: ${{ secrets.SCW_ACCESS_KEY }}
       scw_project_id: ${{ secrets.SCW_PROJECT_ID }}
