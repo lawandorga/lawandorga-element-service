@@ -1,0 +1,4 @@
+*kubeconfig*
+*.tfvars
+*.tfvars.json
+**/.terraform/*
