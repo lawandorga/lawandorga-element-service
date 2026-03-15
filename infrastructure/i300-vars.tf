@@ -10,5 +10,5 @@ variable "certificate_name" {
 
 variable "image_name" {
   type = string
-  default = "docker.io/vectorim/element-web:v1.11.27"
+  default = "docker.io/vectorim/element-web:v1.12.12"
 }
