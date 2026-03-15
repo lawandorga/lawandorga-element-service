@@ -1,8 +1,14 @@
 name: Deployment Stage
 
 on:
-  push:
-    branches: [main]
+  workflow_call:
+    secrets:
+      SCW_ACCESS_KEY:
+        required: true
+      SCW_SECRET_KEY:
+        required: true
+      SCW_PROJECT_ID:
+        required: true
 
 jobs:
   deploy:
